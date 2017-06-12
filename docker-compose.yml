@@ -12,7 +12,7 @@ services:
         depends_on:
             - php
         volumes:
-            - /www/wwwroot/default:/usr/share/nginx/html
+            - ./www/wwwroot/default:/usr/share/nginx/html
     php:
         image: "${DOCKER_USER}/lnmp-php:v1.2"
         build:
